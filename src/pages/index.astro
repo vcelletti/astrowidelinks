@@ -45,8 +45,11 @@ const links = [
     <!-- Header / Name -->
     <h1 class="text-3xl font-bold mb-2">Jorge Perez</h1>
 
-    <!-- Subheader / Description -->
-    <TypewriterText client:idle />
+    <!-- Subheader / Description 
+    client:idle means: “Wait until the main thread is idle, then load and run the component’s JS.”
+    client:load means: “Load and run the component’s JS as soon as possible after the page loads.”
+    client:visible means: “Load and run the component’s JS once the component scrolls into the viewport.” -->
+    <TypewriterText client:load />
 
     <!-- Links -->
     <div class="mt-8 flex flex-col gap-4">
