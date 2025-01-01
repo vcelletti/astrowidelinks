@@ -1,30 +1,42 @@
-# Astro Starter Kit: Basics
+# AstroLinks
 
-```sh
-npm create astro@latest -- --template basics
-```
+![Astrolinks Hero Banner](/public/astrolinks-hero.png)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+A minimalist link-in-bio template for all your social media links, built with Astro and Tailwind CSS, and hosted on GitHub Pages.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This customized Astro starter kit includes Tailwind CSS and Astro Icon support, with automated deployment to GitHub Pages.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Live Project Via GitHub Pages
 
-## 🚀 Project Structure
+[https://jperez00.github.io/astrolinks/](https://jperez00.github.io/astrolinks/)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Features
+
+- **Astro + Tailwind**: Integrated Tailwind for utility-first styling.
+- **Layout & Components**: Created a reusable `Layout.astro` and a separate `index.astro` page.
+- **Icons**: Used [astro-icon](https://www.astroicon.dev/) to import icons, including local SVGs in `src/icons/`.
+- **GitHub Pages Deployment**: Configured `astro.config.mjs` with `site` and `base` settings, and added a GitHub Actions workflow (`.github/workflows/deploy.yml`) to deploy the site to [GitHub Pages](https://pages.github.com/).
+
+## Project Structure
 
 ```text
 /
 ├── public/
 │   └── favicon.svg
+│   └── portrait.webp
 ├── src/
+│   ├── icons/          # Local SVG icons
+│   │   └── github.svg
+│   │   └── linkedin.svg
+│   │   └── terminal.svg
+│   │   └── twitter.svg
+│   │   └── instagram.svg
 │   ├── layouts/
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── styles/
+│       └── global.css
 └── package.json
 ```
 
@@ -36,12 +48,12 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| npm install             | Installs dependencies                            |
+| npm run dev             | Starts local dev server at localhost:4321      |
+| npm run build           | Build your production site to ./dist/          |
+| npm run preview         | Preview your build locally, before deploying     |
+| npm run astro ...       | Run CLI commands like astro add, astro check |
+| npm run astro -- --help | Get help using the Astro CLI                     |
 
 ## 👀 Want to learn more?
 
