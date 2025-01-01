@@ -1,11 +1,71 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+// src/pages/index.astro
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+
+const links = [
+  {
+    name: "GitHub",
+    url: "https://github.com/yourusername",
+    icon: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29..." // truncated GitHub path
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/yourusername",
+    icon: "M16 8a6 6 0 11-12 0 6 6 0 0112 0z..." // truncated LinkedIn path
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/yourusername",
+    icon: "M23 3a10.9 10.9 0 01-3.14 1.53C19.1 4.27..." // truncated Twitter path
+  },
+];
 ---
 
 <Layout>
-	<Welcome />
-</Layout>
+	<!-- Here, you only focus on the page content. 
+		 The <html>, <head>, <body> are in your Layout. -->
+	<main class="mx-auto w-full max-w-md bg-white rounded-lg shadow-md p-6 text-center">
+  
+	  <!-- Profile Image -->
+	  <img
+		src="https://via.placeholder.com/150"
+		alt="Profile Picture"
+		class="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+	  />
+  
+	  <!-- Header / Name -->
+	  <h1 class="text-2xl font-bold mb-2">John Doe</h1>
+  
+	  <!-- Subheader / Description -->
+	  <p class="text-gray-600 mb-6">
+		Freelance Developer & Content Creator. <br />
+		Frontend, Backend, everything in between!
+	  </p>
+  
+	  <!-- Links -->
+	  <div class="flex flex-col gap-3">
+		{links.map((link) => (
+		  <a
+			href={link.url}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="flex items-center justify-center gap-2 px-4 py-3 rounded-full
+				   bg-gray-100 hover:bg-gray-200 transition-colors
+				   text-gray-700 font-medium"
+		  >
+			<!-- Render each icon’s path -->
+			<svg
+			  xmlns="http://www.w3.org/2000/svg"
+			  fill="currentColor"
+			  viewBox="0 0 24 24"
+			  class="w-5 h-5"
+			>
+			  <path d={link.icon} />
+			</svg>
+			{link.name}
+		  </a>
+		))}
+	  </div>
+	</main>
+  </Layout>
