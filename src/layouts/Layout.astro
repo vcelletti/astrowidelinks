@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Footer from "../components/footer.astro";
 
 export interface Props {
   title?: string;
@@ -34,13 +35,6 @@ const {
   <body class="min-h-screen flex flex-col m-0 mx-4 lg:mx-auto">
     <!-- Layout’s content goes here -->
     <slot />
-    <!-- Footer Section -->
-    <footer class="mt-8 text-center text-zinc-400 text-sm">
-      <p>
-        <a href="https://github.com/JPerez00/astrolink" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub Repo</a>
-        &nbsp;|&nbsp;
-        <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" class="hover:underline">MIT License</a>
-      </p>
-    </footer>
+    <Footer />
   </body>
 </html>
