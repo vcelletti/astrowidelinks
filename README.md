@@ -4,7 +4,7 @@
 
 A minimalist link-in-bio template for all your social media links, built with Astro and Tailwind CSS, and hosted on GitHub Pages.
 
-This customized Astro starter kit includes Tailwind CSS and Astro Icon support, with automated deployment to GitHub Pages.
+This customized Astro starter kit includes Tailwind CSS, Astro Icon support and the Typewriter effect, with automated deployment to GitHub Pages.
 
 ## Live Project Via GitHub Pages
 
@@ -16,6 +16,7 @@ This customized Astro starter kit includes Tailwind CSS and Astro Icon support, 
 - **Layout & Components**: Created a reusable `Layout.astro` and a separate `index.astro` page.
 - **Icons**: Used [astro-icon](https://www.astroicon.dev/) to import icons, including local SVGs in `src/icons/`.
 - **GitHub Pages Deployment**: Configured `astro.config.mjs` with `site` and `base` settings, and added a GitHub Actions workflow (`.github/workflows/deploy.yml`) to deploy the site to [GitHub Pages](https://pages.github.com/).
+- **Typewriter effect**: Using React in Astro, thanks to `@astrojs/react`.
 
 ## Project Structure
 
@@ -25,7 +26,10 @@ This customized Astro starter kit includes Tailwind CSS and Astro Icon support, 
 │   └── favicon.svg
 │   └── portrait.webp
 ├── src/
-│   ├── icons/          # Local SVG icons
+│   ├── components/
+│   │   └── Footer.astro
+│   │   └── TypewriterText.jsx
+│   ├── icons/
 │   │   └── github.svg
 │   │   └── linkedin.svg
 │   │   └── terminal.svg
