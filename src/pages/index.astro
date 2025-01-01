@@ -33,7 +33,7 @@ const links = [
 ---
 
 <Layout>
-  <main class="mt-8 lg:mt-12 mx-auto w-full max-w-lg text-center">
+  <main class="mt-10 lg:mt-16 mx-auto w-full max-w-lg text-center">
     <!-- Profile Image -->
     <img
       src="/astrolinks/portrait.webp"
@@ -42,7 +42,7 @@ const links = [
     />
 
     <!-- Header / Name -->
-    <h1 class="text-2xl font-semibold mb-2">Jorge Perez</h1>
+    <h1 class="text-2xl font-bold mb-2">Jorge Perez</h1>
 
     <!-- Subheader / Description -->
     <p class="text-lg text-zinc-600">
@@ -56,7 +56,7 @@ const links = [
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center justify-center gap-1.5 px-4 py-3 rounded-full border bg-white hover:bg-zinc-200 transition-colors text-zinc-700 font-medium"
+          class="flex items-center justify-center gap-1.5 px-4 py-3 rounded-full border bg-white hover:bg-zinc-200 transition-all text-zinc-700 font-medium hover:shadow"
         >
           <Icon name={link.icon} class="w-5 h-5" aria-label={link.name} />
           {link.name}
