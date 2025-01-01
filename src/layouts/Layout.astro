@@ -1,22 +1,38 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/global.css";
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+export interface Props {
+  title?: string;
+  description?: string;
+  creator?: string;
+  repoLink?: string;
+}
+
+const {
+  title = "AstroLinks - Link-in-bio Template", 
+  description = "A simple Link-In-Bio template built with Astro & Tailwind CSS.", 
+  creator = "Jorge Perez", 
+  repoLink = "https://github.com/JPerez00/astrolink"
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Title -->
+    <title>{title}</title>
+
+    {description && <meta name="description" content={description} />}
+    {creator && <meta name="author" content={creator} />}
+    {repoLink && <meta name="repoLink" content={repoLink} />}
+  </head>
+  <body class="min-h-screen flex flex-col m-0">
+    <!-- Layout’s content goes here -->
+    <slot />
+  </body>
+</html>
