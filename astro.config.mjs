@@ -8,5 +8,5 @@ import icon from 'astro-icon';
 export default defineConfig({
   integrations: [tailwind(), icon()],
   site: 'https://jperez00.github.io/astrolinks',
-  base: '/astrolinks/',
+  base: '/astrolinks',
 });
