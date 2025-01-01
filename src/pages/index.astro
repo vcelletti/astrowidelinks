@@ -6,7 +6,7 @@ const links = [
   {
     name: "GitHub",
     url: "https://github.com/yourusername",
-    icon: "github", // This references `src/icons/github.svg`
+    icon: "github",
   },
   {
     name: "LinkedIn",
@@ -16,7 +16,7 @@ const links = [
   {
     name: "Twitter",
     url: "https://twitter.com/yourusername",
-    icon: "twitter", // `src/icons/twitter.svg`
+    icon: "twitter",
   },
   {
     name: "Instagram",
@@ -24,39 +24,35 @@ const links = [
     icon: "instagram",
   },
 ];
+
 ---
 
 <Layout>
-  <main class="mx-auto w-full max-w-md bg-white rounded-lg shadow-md p-6 text-center">
+  <main class="mt-8 lg:mt-12 mx-auto w-full max-w-lg text-center">
     <!-- Profile Image -->
     <img
-      src="https://via.placeholder.com/150"
+      src="/src/assets/images/portrait.webp"
       alt="Profile Picture"
-      class="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+      class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow"
     />
 
     <!-- Header / Name -->
-    <h1 class="text-2xl font-bold mb-2">John Doe</h1>
+    <h1 class="text-2xl font-semibold mb-2">Jorge Perez</h1>
 
     <!-- Subheader / Description -->
-    <p class="text-gray-600 mb-6">
-      Freelance Developer & Content Creator.
-      <br />
-      Frontend, Backend, everything in between!
+    <p class="text-lg text-zinc-600">
+      Freelance Developer | Content Creator | Writer
     </p>
 
     <!-- Links -->
-    <div class="flex flex-col gap-3">
+    <div class="mt-8 flex flex-col gap-4">
       {links.map((link) => (
         <a
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center justify-center gap-2 px-4 py-3 rounded-full
-                 bg-gray-100 hover:bg-gray-200 transition-colors
-                 text-gray-700 font-medium"
+          class="flex items-center justify-center gap-1.5 px-4 py-3 rounded-full border bg-white hover:bg-zinc-200 transition-colors text-zinc-700 font-medium"
         >
-          <!-- Render our local or library-based icon. -->
           <Icon name={link.icon} class="w-5 h-5" aria-label={link.name} />
           {link.name}
         </a>
