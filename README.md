@@ -1,6 +1,6 @@
 # AstroLinks
 
-![Astrolinks Hero Banner](/public/astrolinks-hero.png)
+![Astrolinks Demo Video](/public/astrolinks-demo.mp4)
 
 A minimalist link-in-bio template for all your social media links, built with Astro and Tailwind CSS, and hosted on GitHub Pages.
 
@@ -13,10 +13,11 @@ This customized Astro starter kit includes Tailwind CSS, Astro Icon support and 
 ## Features
 
 - **Astro + Tailwind**: Integrated Tailwind for utility-first styling.
+- **Light & Dark mode toggle**: Integrated `darkclass` from Tailwind.
 - **Layout & Components**: Created a reusable `Layout.astro` and a separate `index.astro` page.
 - **Icons**: Used [astro-icon](https://www.astroicon.dev/) to import icons, including local SVGs in `src/icons/`.
 - **GitHub Pages Deployment**: Configured `astro.config.mjs` with `site` and `base` settings, and added a GitHub Actions workflow (`.github/workflows/deploy.yml`) to deploy the site to [GitHub Pages](https://pages.github.com/).
-- **Typewriter effect**: Using React in Astro, thanks to `@astrojs/react`.
+- **Typewriter effect**: Using React components in Astro, thanks to `@astrojs/react`.
 
 ## Project Structure
 
@@ -29,6 +30,7 @@ This customized Astro starter kit includes Tailwind CSS, Astro Icon support and 
 │   ├── components/
 │   │   └── Footer.astro
 │   │   └── TypewriterText.jsx
+│   │   └── ToggleTheme.jsx
 │   ├── icons/
 │   │   └── github.svg
 │   │   └── linkedin.svg
