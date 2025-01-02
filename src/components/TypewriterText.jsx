@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 function TypewriterText() {
   return (
-    <div className="text-xl text-zinc-700 dark:text-zinc-300 font-medium">
+    <div className="text-xl text-zinc-700 dark:text-zinc-300 h-6 font-medium">
       <Typewriter
         options={{
           strings: [
