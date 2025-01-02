@@ -74,7 +74,7 @@ export default function ThemeToggle() {
       type="button"
       aria-label={label}
       onClick={handleClick}
-      className="group rounded-full px-2 py-2 bg-white dark:bg-zinc-900 ring-1 ring-zinc-300 dark:ring-zinc-700"
+      className="group rounded-full px-2.5 py-2.5 bg-white dark:bg-zinc-900 ring-1 ring-zinc-300 dark:ring-zinc-700 shadow hover:shadow-md"
     >
       {/* Sun icon (visible in light mode, hidden in dark mode) */}
       <SunIcon
