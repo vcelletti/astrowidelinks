@@ -10,7 +10,7 @@ export interface Props {
 }
 
 const {
-  title = "AstroLinks - Link-in-bio Template", 
+  title = "AstroLinks Template", 
   description = "A simple Link-In-Bio template built with Astro & Tailwind CSS.", 
   creator = "Jorge Perez", 
   repoLink = "https://github.com/JPerez00/astrolink"
@@ -45,10 +45,7 @@ const {
   </head>
 
   <body class="min-h-screen flex flex-col m-0 mx-4 lg:mx-auto bg-zinc-100 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-100">
-    <!-- Layout’s content goes here -->
     <slot />
-
-    <!-- Footer Section -->
     <Footer />
   </body>
 </html>
