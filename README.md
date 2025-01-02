@@ -1,10 +1,10 @@
 # AstroLinks
 
-![Astrolinks Demo Video](/public/astrolinks-demo.mp4)
+![Astrolinks Demo Video](/public/astrolinks-demo.gif)
 
 A minimalist link-in-bio template for all your social media links, built with Astro and Tailwind CSS, and hosted on GitHub Pages.
 
-This customized Astro starter kit includes Tailwind CSS, Astro Icon support and the Typewriter effect, with automated deployment to GitHub Pages.
+This customized Astro starter kit includes Tailwind CSS, Astro Icon support, a light and dark mode toggle and the Typewriter effect, with automated deployment to GitHub Pages.
 
 ## Live Project Via GitHub Pages
 
