@@ -1,4 +1,4 @@
-# AstroLinks
+# AstroLinks - Updated to v5.3.0
 
 ![Astrolinks Demo Video](/public/astrolinks-demo.gif)
 
@@ -29,8 +29,8 @@ This customized Astro starter kit includes Tailwind CSS, Astro Icon support, a l
 ├── src/
 │   ├── components/
 │   │   └── Footer.astro
-│   │   └── TypewriterText.jsx
-│   │   └── ToggleTheme.jsx
+│   │   └── TypewriterText.tsx
+│   │   └── ToggleTheme.tsx
 │   ├── icons/
 │   │   └── github.svg
 │   │   └── linkedin.svg
