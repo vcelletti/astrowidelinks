@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
-import TypewriterText from "../components/TypewriterText";
+import TypewriterText from "../components/TypewriterText.jsx";
 import ToggleTheme from "../components/ToggleTheme.jsx";
 
 const links = [
@@ -42,8 +42,6 @@ const links = [
   <main
     class="mt-4 md:mt-8 mx-auto w-full max-w-xl text-center"
   >
-
-    <!-- Use the React toggle with a client directive to make it interactive -->
     <div class="text-end">
       <ToggleTheme client:load />
     </div>

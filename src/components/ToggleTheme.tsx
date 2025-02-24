@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 /* Sun Icon */
-function SunIcon(props) {
+function SunIcon(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -21,7 +21,7 @@ function SunIcon(props) {
 }
 
 /* Moon Icon */
-function MoonIcon(props) {
+function MoonIcon(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" {...props}>
       <path
@@ -35,14 +35,11 @@ function MoonIcon(props) {
 }
 
 export default function ThemeToggle() {
-  // Track whether we’re mounted, to avoid mismatch between SSR & client
   const [mounted, setMounted] = useState(false);
-  // Track the current theme, 'light' or 'dark'
   const [resolvedTheme, setResolvedTheme] = useState('light');
 
   useEffect(() => {
-    setMounted(true); // we are now in the client
-    // Check localStorage or OS preference:
+    setMounted(true);
     if (
       localStorage.theme === 'dark' ||
       (!('theme' in localStorage) &&
@@ -76,13 +73,10 @@ export default function ThemeToggle() {
       onClick={handleClick}
       className="group rounded-full px-2.5 py-2.5 bg-white dark:bg-zinc-900 ring-1 ring-zinc-300 dark:ring-zinc-700 shadow hover:shadow-md"
     >
-      {/* Sun icon (visible in light mode, hidden in dark mode) */}
       <SunIcon
         className={`h-5 w-5 stroke-zinc-600 fill-zinc-50 hover:stroke-black 
         ${resolvedTheme === 'dark' ? 'hidden' : 'block'}`}
       />
-
-      {/* Moon icon (visible in dark mode, hidden in light mode) */}
       <MoonIcon
         className={`h-5 w-5 fill-zinc-300 hover:fill-white transition
         ${resolvedTheme === 'dark' ? 'block' : 'hidden'}`}
