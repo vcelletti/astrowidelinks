@@ -1,10 +1,12 @@
-# AstroLinks - Updated to v5.3.0
+# AstroLinks - Updated to v5.5.5
 
 ![Astrolinks Demo Video](/public/astrolinks-demo.gif)
 
-A minimalist link-in-bio template for all your social media links, built with Astro and Tailwind CSS, and hosted on GitHub Pages.
+A minimalist link-in-bio template for all your social media links, built with Astro v5.5.5, Tailwind CSS and hosted on GitHub Pages.
 
 This customized Astro starter kit includes Tailwind CSS, Astro Icon support, a light and dark mode toggle and the Typewriter effect, with automated deployment to GitHub Pages.
+
+For more details on how I built this, check out the [blog](https://www.jorge-perez.dev/blog/astro-simple-project).
 
 ## Live Project Via GitHub Pages
 
@@ -46,7 +48,7 @@ This customized Astro starter kit includes Tailwind CSS, Astro Icon support, a l
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+To learn more about the folder structure of an Astro project, refer to [this guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
 ## 🧞 Commands
 
@@ -63,4 +65,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check the [Astro documentation](https://docs.astro.build).
