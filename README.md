@@ -1,6 +1,6 @@
 # AstroLinks - Dynamic Fork
 
-![Astrolinks Demo Video](/public/astrolinks-demo.gif)
+![Astrolinks Demo](/public/astrowidelinks-demo.gif)
 
 A minimalist link-in-bio template built with Astro v5.5.5, Tailwind CSS, and React. This fork extends the original [AstroLinks](https://github.com/JPerez00/astrolinks) by adding support for **volatile featured links** alongside static social links, making it perfect for temporarily promoting events, campaigns, or special content.
 
