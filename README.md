@@ -1,16 +1,18 @@
-# AstroLinks - Updated to v5.5.5
+# AstroLinks - Valerio Celletti
 
 ![Astrolinks Demo Video](/public/astrolinks-demo.gif)
 
 A minimalist link-in-bio template for all your social media links, built with Astro v5.5.5, Tailwind CSS and hosted on GitHub Pages.
 
-This customized Astro starter kit includes Tailwind CSS, Astro Icon support, a light and dark mode toggle and the Typewriter effect, with automated deployment to GitHub Pages.
+This project is a fork and customization of the original [AstroLinks template](https://github.com/JPerez00/astrolinks) by [Jorge Perez](https://www.jorge-perez.dev/).
 
-For more details on how I built this, check out the [blog](https://www.jorge-perez.dev/blog/astro-simple-project).
+## Live Site
 
-## Live Project Via GitHub Pages
+[https://vcelletti.github.io/astrolinks/](https://vcelletti.github.io/astrolinks/)
 
-[https://jperez00.github.io/astrolinks/](https://jperez00.github.io/astrolinks/)
+## Credits
+
+Original template: [AstroLinks by Jorge Perez](https://github.com/JPerez00/astrolinks)
 
 ## Features
 

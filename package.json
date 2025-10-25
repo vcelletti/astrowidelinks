@@ -4,8 +4,10 @@
   "version": "0.0.3",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/fetch-previews.js && astro build",
+    "build:fast": "astro build",
     "preview": "astro preview",
+    "fetch-previews": "node scripts/fetch-previews.js",
     "astro": "astro"
   },
   "dependencies": {
@@ -17,11 +19,15 @@
     "typewriter-effect": "^2.21.0"
   },
   "author": {
-    "name": "Jorge Perez",
-    "url": "https://www.jorge-perez.dev/"
+    "name": "Valerio Celletti",
+    "url": "https://www.valeriocelletti.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JPerez00/typesavior"
+    "url": "https://github.com/vcelletti/astrolinks"
+  },
+  "devDependencies": {
+    "node-fetch": "^2.7.0",
+    "sharp": "^0.34.4"
   }
 }

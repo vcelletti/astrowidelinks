@@ -7,9 +7,10 @@ function TypewriterText() {
       <Typewriter
         options={{
           strings: [
-            "Software developer 💻",
-            "Writer 🖋",
-            "Photographer 📸"
+            "Google Ads Consultant",
+            "Imprenditore",
+            "Formatore",
+            "Google Premier Partner"
           ],
           autoStart: true,
           loop: true,
