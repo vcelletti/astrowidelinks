@@ -6,6 +6,6 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   integrations: [tailwind(), icon(), react(),],
-  site: 'https://vcelletti.github.io/astrowidelinks',
-  base: '/astrowidelinks',
+  site: 'https://linkinbio.valeriocelletti.com',
+  base: '/',
 });
